@@ -25,6 +25,7 @@
     li {
       padding: @component-padding;
       font-family: @font-family;
+      color: @text-color;
 
       &.two-lines { padding: @component-padding/2 @component-padding; }
 
@@ -36,10 +37,13 @@
         }
       }
 
-      &.selected {
-        .status.icon {
-          color: @text-color-selected;
-        }
+      .character-match {
+        color: @text-color-darker;
+      }
+
+      &.selected,
+      &.selected .character-match {
+        color: @text-color-highlight;
       }
     }
   }
