@@ -2,18 +2,21 @@
 @import "ui-mixins";
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
-  color: @text-color;
-  transition: color 0.2s;
+  border: none !important;
+  background-color: inherit;
 
-  &:hover, &:focus {
-    color: @text-color;
+  &,
+  &:hover {
+    color: @text-color-subtle;
+    background-color: inherit;
+    border: none;
   }
+
   &.selected,
   &.selected:hover {
-    color: @text-color-highlight;
-    &:hover {
-
-    }
+    color: @text-color-darker;
+    background-color: inherit;
+    border: none;
   }
 }
 
