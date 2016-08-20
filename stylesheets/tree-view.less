@@ -8,6 +8,7 @@
 .focusable-panel {
   opacity: 1;
 
+  // Foreground color for selected item.
   &:focus {
     .selected > .name,
     .selected > .name:before,
@@ -15,5 +16,11 @@
     .selected > .list-item > .name:before {
       color: #fff !important;
     }
+  }
+
+  // Background color for selected item.
+  .entry.list-nested-item.selected:before,
+  .entry.list-item.selected:before {
+    background-color: @background-color-selected;
   }
 }
