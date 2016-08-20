@@ -25,5 +25,19 @@
   .pane-column > * {
     border-bottom: 1px solid @pane-item-border-color;
     &:last-child { border-bottom: none; }
+    margin-bottom: -@resize-handle-size;
+  }
+
+  atom-pane-resize-handle {
+    margin: 0;
+    border: none !important;
+
+    .vertical {
+      height: @resize-handle-size;
+    }
+
+    .horizontal {
+      width: @resize-handle-size;
+    }
   }
 }
