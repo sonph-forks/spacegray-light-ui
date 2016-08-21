@@ -1,6 +1,6 @@
 @import "ui-variables";
 
-.modal.overlay {
+atom-panel.modal {
   // Add margin top so the overlay doesn't cover the tab bar.
   // The value is equal to the tab bar height defined in tabs.less.
   margin-top: @tab-height + @tab-top-padding;
@@ -8,7 +8,7 @@
   background-color: @overlay-background-color;
   padding: 0;
 
-  .editor.mini {
+  atom-text-editor[mini] {
     font-family: @font-family;
     padding: @component-padding;
     padding-bottom: 3 * @component-padding;

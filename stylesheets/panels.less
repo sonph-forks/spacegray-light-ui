@@ -3,12 +3,15 @@
 @import "buttons";
 
 .panel {
+  code {
+    color: @text-color !important;
+  }
   &.bordered {
     border-radius: @component-border-radius;
   }
 }
 
-.tool-panel {
+atom-panel {
   .text(normal);
   position: relative;
 
@@ -21,7 +24,7 @@
 }
 
 .is-blurred {
-  .tool-panel,
+  atom-panel,
   .inset-panel {
   }
 }
