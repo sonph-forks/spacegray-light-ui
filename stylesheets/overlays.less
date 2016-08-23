@@ -24,6 +24,10 @@
       padding: @component-padding;
       color: @text-color;
 
+      .character-match {
+        color: @text-color-dark;
+      }
+
       &.two-lines { padding: @component-padding/2 @component-padding; }
 
       .status.icon {
@@ -34,19 +38,9 @@
         }
       }
 
-      .character-match {
-        color: @text-color-darker;
-      }
-
-      &.selected,
-      &.selected .character-match {
-        color: @text-color-highlight;
-      }
-
       kbd {
         background-color: inherit;
         font-size: inherit;
-        font-family: inherit;
       }
     }
   }
